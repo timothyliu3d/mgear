@@ -190,11 +190,11 @@ class Main(object):
             scriptName (str): Parameter scriptname.
             valueType (str): The Attribute Type. Exp: 'string', 'bool',
                 'long', etc..
-            value (float or int): Default parameter value.
+            value (float or int or str or bool): Default parameter value.
             niceName (str): Parameter niceName.
             shortName (str): Parameter shortName.
-            minimum (float or int): mininum value.
-            maximum (float or int): maximum value.
+            minimum (float or int or None): mininum value.
+            maximum (float or int or None): maximum value.
             keyable (boo): If true is keyable
             readable (boo): If true is readable
             storable (boo): If true is storable
