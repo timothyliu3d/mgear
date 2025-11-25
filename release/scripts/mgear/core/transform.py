@@ -169,8 +169,8 @@ def getChainTransform(positions, normal, negate=False, axis="xz"):
     """Get a tranformation list from a positions list and normal.
 
     Arguments:
-        positions(list of vector): List with the chain positions.
-        normal (vector): Normal direction.
+        positions (list[om2.MVector]): List with the chain positions.
+        normal (om2.MVector): Normal direction.
         negate (bool): If true invert the chain orientation.
 
     returns:
@@ -204,8 +204,8 @@ def getChainTransform2(positions, normal, negate=False, axis="xz"):
         getChainTransform2 is using the latest position on the chain
 
     Arguments:
-        positions(list of vector): List with the chain positions.
-        normal (vector): Normal direction.
+        positions (list[om2.MVector]): List with the chain positions.
+        normal (om2.MVector): Normal direction.
         negate (bool): If true invert the chain orientation.
 
     returns:
