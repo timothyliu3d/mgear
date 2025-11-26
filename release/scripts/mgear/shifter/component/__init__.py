@@ -1343,7 +1343,7 @@ class Main(object):
                             from the component name or instance name.(optional)
 
         Returns:
-            str: The long name of the new attribute
+            pm.Attribute: The pymaya wrapper of the new attribute.
 
         """
         if not uihost:
@@ -1423,7 +1423,7 @@ class Main(object):
             uihost (dagNode): Optional uihost, if none self.uihost will be use
 
         Returns:
-            str: The long name of the new attribute
+            pm.Attribute: The long name of the new attribute
 
         """
 
@@ -1496,7 +1496,7 @@ class Main(object):
             writable (bool): Set if the attribute is writable or not.(optional)
 
         Returns:
-            str: The long name of the new attribute
+            pm.Attribute: The long name of the new attribute
 
         """
         attr = attribute.addAttribute(
