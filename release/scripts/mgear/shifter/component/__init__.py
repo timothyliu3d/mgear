@@ -923,7 +923,7 @@ class Main(object):
         iconShape,
         tp=None,
         lp=True,
-        mirrorConf=[0, 0, 0, 0, 0, 0, 0, 0, 0],
+        mirrorConf=(0, 0, 0, 0, 0, 0, 0, 0, 0),
         guide_loc_ref=None,
         add_2_grp=True,
         **kwargs

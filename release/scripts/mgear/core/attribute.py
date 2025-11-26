@@ -1677,7 +1677,7 @@ def get_alias_for_attr(full_attr_name):
 ##########################################################
 
 
-def add_mirror_config_channels(ctl, conf=[0, 0, 0, 0, 0, 0, 0, 0, 0]):
+def add_mirror_config_channels(ctl, conf=(0, 0, 0, 0, 0, 0, 0, 0, 0)):
     """Add channels to configure the mirror posing
 
     Args:
