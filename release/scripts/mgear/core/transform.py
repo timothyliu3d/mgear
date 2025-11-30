@@ -249,10 +249,10 @@ def getTransformFromPos(pos):
     """Create a transformation Matrix from a given position.
 
     Arguments:
-        pos (vector): Position for the transformation matrix
+        pos (om2.MVector): Position for the transformation matrix
 
     Returns:
-        matrix: The newly created transformation matrix
+        om2.MMatrix: The newly created transformation matrix
 
     >>>  t = tra.getTransformFromPos(self.guide.pos["root"])
 
@@ -266,18 +266,19 @@ def getTransformFromPos(pos):
     return m
 
 
-def getOffsetPosition(node, offset=[0, 0, 0]):
+def getOffsetPosition(node, offset=(0, 0, 0)):
     """Get an offset position from dagNode
 
     Arguments:
         node (dagNode): The dagNode with the original position.
-        offset (list of float): Ofsset values for xyz.
-            exp : [1.2, 4.6, 32.78]
+        offset (list[float] | tuple[float]): Offset values for xyz.
+            Example: [1.2, 4.6, 32.78]
 
     Returns:
-        list of float: the new offset position.
+        om2.MVector: the new offset position.
 
     Example:
+
         .. code-block:: python
 
             self.root = self.addRoot()
