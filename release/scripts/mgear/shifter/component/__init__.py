@@ -56,8 +56,8 @@ class Main(object):
 
         # --------------------------------------------------
         # Main Objects
-        self.rig = rig
-        self.guide = guide
+        self.rig = rig  # type: mgear.shifter.Rig
+        self.guide = guide  # type: mgear.shifter.guide.Rig
 
         self.options = self.rig.options
         self.model = self.rig.model
