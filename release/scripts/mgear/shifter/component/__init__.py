@@ -59,8 +59,8 @@ class Main(object):
 
         # --------------------------------------------------
         # Main Objects
-        self.rig = rig
-        self.guide = guide
+        self.rig = rig  # type: mgear.shifter.Rig
+        self.guide = guide  # type: mgear.shifter.guide.Rig
 
         self.options = self.rig.options
         self.model = self.rig.model
@@ -1381,7 +1381,7 @@ class Main(object):
                             from the component name or instance name.(optional)
 
         Returns:
-            pm.Attribute: A pymaya `Attribute` wrapper of the new attribute.
+            pm.Attribute: A pymaya ``Attribute`` wrapper of the new attribute.
 
         """
         if not uihost:
@@ -1461,7 +1461,7 @@ class Main(object):
             uihost (dagNode): Optional uihost, if none self.uihost will be use
 
         Returns:
-            str: The long name of the new attribute
+            pm.Attribute: A pymaya ``Attribute`` wrapper of the new attribute.
 
         """
 
